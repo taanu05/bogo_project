@@ -1,0 +1,275 @@
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  width: 450px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 39px;
+}
+.container {
+  background-color: white;
+  width: 341px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 39px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.line {
+  flex-grow: 1;
+  width: 91.65px;
+  height: 1px;
+  background-color: rgba(200,200,200,1);
+}
+.heading-text {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(255, 107, 130);
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.template-div {
+  position: relative;
+  max-width: 341px;
+  height: 70px;
+  border: 1.5px solid rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+.template-div-2 {
+  position: relative;
+  max-width: 341px;
+  height: 70px;
+  border: 1.5px solid rgba(0,0,0,0.2);
+  overflow: visible;
+  transition: height 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+.template-table {
+  width: 100%;
+  height: 100%;
+}
+input[type=radio] {
+  appearance: none;
+  width: 14.46px;
+  height: 14.46px;
+  color: rgb(255, 107, 130);
+  border: 0.9px solid rgb(255, 107, 130);
+  border-radius: 50%;
+  position: relative;
+  transition: 0.3s;
+}
+input[type="radio"]:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 107, 130);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radio-button {
+  width: 40px;
+  height: 40px;
+  text-align: right;
+}
+.radio-button-2 {
+  width: 40px;
+  height: 40px;
+  vertical-align: bottom;
+  text-align: right;
+}
+.radio {
+  display: flex;
+}
+.unit-span {
+  margin-left: 10px;
+}
+.unit {
+  vertical-align: middle;
+  height: 50px;
+}
+.unit-p {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 17px;
+}
+.unit1 {
+  display: flex;
+  align-items: start;
+}
+.percentage-span {
+  background-color: rgb(255, 107, 130);
+  color: white;
+  font-weight: normal;
+  margin-left: 10px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.standard-price {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 3px;
+
+}
+.usd-price-p {
+  font-weight: 500;
+  font-size: 14.46px;
+}
+.strikethrough-span {
+  display: block;
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba(0,0,0,0.4);
+  text-decoration: line-through;
+}
+.size {
+  font-weight: 400;
+  font-size: 9.94px;
+  height: 15px;
+}
+.numbering {
+  font-weight: 400;
+  font-size: 9.04px;
+  width: 15px;
+}
+.dropdown {
+  width: 65.98px;
+  height: 25.31px;
+  border-radius: 1.81px;
+  border: 0.9px solid rgb(217,217,217);
+}
+.colorDropdown {
+  width: 65.98px;
+  height: 25.31px;
+  border-radius: 1.81px;
+  border: 0.9px solid rgb(217,217,217);
+}
+.sizeandcolour-div {
+  display: none;
+}
+.badge {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  max-width: 119px;
+  min-width: 119px;
+  max-height: 22px;
+  min-height: 22px;
+  border-radius: 0 0 4px 4px;
+  background-color: rgb(255, 107, 130);
+  color:white;
+  text-align: center;
+  text-justify: auto;
+  padding-top: 5px;
+}
+.badge::after {
+  content: "";
+  position: absolute;
+  bottom: 23px;
+  right: 119px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 4px solid rgb(215, 68, 91);
+}
+.badge::before {
+  content: "";
+  position: absolute;
+  bottom: 23px;
+  right: -5.9px;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 6.5px solid transparent;
+  border-bottom: 4px solid rgb(215, 68, 91);
+}
+.delivery-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 11px;
+}
+.delivery-p {
+  color: rgb(255, 107, 130);
+  margin: 0;
+}
+.delivery-span {
+  font-weight: 400;
+}
+.usd-span {
+  font-size: 14px;
+}
+.cart-button {
+  background-color: rgb(255, 107, 130);
+  width: 342px;
+  height: 40px;
+  padding: 10px;
+  gap: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.cart-button:hover {
+  opacity: 0.8;
+}
+.cart-button:active {
+  opacity: 0.5;
+}
+.icon {
+  width: 9.33px;
+  height: 9.33px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 9px;
+  margin-right: 0;
+}
+.cart-text {
+  width: 64px;
+  height: 15px;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 0;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 12px;
+  font-style: italic;
+  color: rgba(0,0,0,0.4);
+  text-align: right;
+  margin-top: 5px;
+}
+.content-table {
+  display: none;
+}
+.price-div {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
